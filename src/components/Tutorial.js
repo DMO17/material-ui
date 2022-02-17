@@ -1,61 +1,75 @@
 import React from "react";
 
-import ButtonGroup from "@mui/material/ButtonGroup";
-import CheckBox from "@mui/material/Checkbox";
-import SaveIcon from "@material-ui/icons/Save";
-import DeleteIcon from "@material-ui/icons/Delete";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
+// import ButtonGroup from "@mui/material/ButtonGroup";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
-const CheckBoxExample = () => {
+// import SaveIcon from "@material-ui/icons/Save";
+
+const FormSection = () => {
   return (
-    <div>
-      <TextField variant="outlined" type="date" />
-      <CheckBox />
-    </div>
+    <>
+      <div style={{ backgroundColor: "grey" }}> FORM</div>
+      <div style={{ backgroundColor: "lightblue" }}>CITY History</div>
+    </>
   );
 };
 
-const CardExample = () => {
+const CurrentWeather = () => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="https://i.dailymail.co.uk/1s/2022/02/17/00/54294069-0-image-a-19_1645058502188.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <div style={{ backgroundColor: "green" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>DATE</div>
+        <div> Current weather Card info</div>
+      </Box>
+      <div> AdvancedCurrent Weather Data card</div>
+    </div>
+  );
+};
+// const WeatherForecast = () => {};
+
+const DataSection = () => {
+  return (
+    <>
+      <CurrentWeather></CurrentWeather>
+      <div style={{ backgroundColor: "white" }}>Weather Forcast</div>
+    </>
+  );
+};
+
+const GridExample = () => {
+  return (
+    <>
+      <Grid container spacing={0} justifyContent="center">
+        <Grid
+          item
+          xs={8}
+          style={{ backgroundColor: "pink", height: 700, width: 400 }}
+        >
+          <DataSection />
+        </Grid>
+        <Grid
+          item
+          xs={4}
+          style={{ backgroundColor: "yellow", height: 700, width: 400 }}
+        >
+          <FormSection />
+        </Grid>
+      </Grid>
+    </>
   );
 };
 
 export default function Tutorial() {
   return (
-    <div>
-      <CardExample />
-      <CheckBoxExample />
-      <ButtonGroup variant="contained" color="secondary" size="large">
-        <Button startIcon={<SaveIcon />}>SAVE</Button>
-        <Button startIcon={<DeleteIcon />}>DISCARD</Button>
-      </ButtonGroup>
-    </div>
+    <>
+      <GridExample />
+    </>
   );
 }
