@@ -1,11 +1,11 @@
 import "./App.css";
-import Tutorial from "./components/Tutorial";
+import { Shopping } from "./ShoppingCart/containers/Shopping";
 
 function App() {
   return (
     <div>
-      <h1> HELLO WORLD</h1>
-      <Tutorial />
+      <h1>Shopping</h1>
+      <Shopping />
     </div>
   );
 }
