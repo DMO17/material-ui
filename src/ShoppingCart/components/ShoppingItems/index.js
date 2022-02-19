@@ -1,5 +1,11 @@
+import { Card } from "@mui/material";
 import React from "react";
+import { ShoppingCard } from "../ShoppingCard";
 
 export const ShoppingItems = () => {
-  return <div>ShoppingItems</div>;
+  return (
+    <div>
+      <ShoppingCard />
+    </div>
+  );
 };
