@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ShoppingContext } from "../contexts/ShoppingProvider";
 
-const useShoppingContextValues = () => {
+export const useShoppingContextValues = () => {
   return useContext(ShoppingContext);
 };

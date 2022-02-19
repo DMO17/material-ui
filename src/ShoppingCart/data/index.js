@@ -1,39 +1,39 @@
 export const shoppingData = [
   {
-    id: Date.now(),
+    id: 14563546,
     price: "£125",
     itemName: "Black Air Max 90",
     itemUrl: "https://i8.amplience.net/i/jpl/jd_474600_bl?w=408&h=408&fmt=webp",
   },
   {
-    id: Date.now(),
+    id: 2546546,
     price: "£65.00",
     itemName: "Converse All Star Hi Anatomy",
     itemUrl: "https://i8.amplience.net/i/jpl/jd_509974_bl?w=408&h=408&fmt=webp",
   },
   {
-    id: Date.now(),
+    id: 23543,
     price: "£90.00",
     itemName: "Nike Blazer Mid '77",
     itemUrl:
       "https://i8.amplience.net/i/jpl/jd_476219_a?qlt=92&w=750&h=531&v=1&fmt=auto",
   },
   {
-    id: Date.now(),
+    id: 56735683686,
     price: "£80.00",
     itemName: "adidas Originals LA Trainer",
     itemUrl:
       "https://i8.amplience.net/i/jpl/jd_511986_a?qlt=92&w=750&h=531&v=1&fmt=auto",
   },
   {
-    id: Date.now(),
+    id: 6787878,
     price: "£160.00",
     itemName: "Emporio Armani EA7 B&W Mesh Run",
     itemUrl:
       "https://i8.amplience.net/i/jpl/jd_115537_a?qlt=92&w=750&h=531&v=1&fmt=auto",
   },
   {
-    id: Date.now(),
+    id: 67847847,
     price: "£85.00",
     itemName: "Lacoste Game Advance",
     itemUrl:
